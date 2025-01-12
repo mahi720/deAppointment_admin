@@ -56,7 +56,7 @@ const Sidebar = () => {
             to={"/doctor-list"}
           >
             <img src={assets.people_icon} alt="" />
-            <p>Doctors List</p>
+            <p className="hidden md:block">Doctors List</p>
           </NavLink>
         </ul>
       )}
