@@ -18,7 +18,7 @@ const AllApointment = () => {
     <div className="w-full, max-w-6xl m-5">
       <p className="mb-3 text-lg font-medium">All Appointments</p>
 
-      <div className="bg-white border rounded text-sm max-h-[80vh] min-h-[80vh] overflow-y-scroll">
+      <div className="bg-white border rounded text-sm max-h-[80vh] min-h-[80vh]">
         <div className="hidden sm:grid grid-cols-[1fr_4fr_2fr_4fr_5fr_2fr_1fr] grid-flow-col py-3 px-6 border-b ">
           <p>#</p>
           <p>Patient</p>
@@ -29,7 +29,8 @@ const AllApointment = () => {
           <p>Actions</p>
         </div>
 
-        {appointments.map((item, index) => (
+        <div className = "overflow-y-scroll max-h-[80vh] min-h-[80vh]">
+           {appointments.map((item, index) => (
           <div
             className="flex flex-wrap justify-between max-sm:gap-2 sm:grid sm:grid-cols-[1fr_4fr_2fr_4fr_5fr_2fr_1fr] items-center text-gray-500 py-3 px-6 border-b hover:bg-gray-50"
             key={index}
@@ -73,6 +74,7 @@ const AllApointment = () => {
             )}
           </div>
         ))}
+        </div>
       </div>
     </div>
   );
