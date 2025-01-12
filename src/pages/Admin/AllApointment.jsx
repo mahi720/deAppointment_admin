@@ -50,7 +50,7 @@ const AllApointment = () => {
             </p>
             <div className="flex items-center gap-2">
               <img
-                className="w-8 rounded-full bg-gray-200"
+                className="w-8 rounded-full bg-gray-200 h-8 object-cover bg-cover"
                 src={item.docData.image}
                 alt=""
               />{" "}
